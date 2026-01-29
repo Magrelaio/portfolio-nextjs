@@ -2,7 +2,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 
 export const metadata = {
-  title: "Seu Nome | Portfólio",
+  title: "Caio Cesar | Portfólio",
   description: "Portfólio profissional",
 };
 
