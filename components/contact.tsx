@@ -8,7 +8,7 @@ export default function Contact() {
       </p>
 
       <a
-        href="mailto:seuemail@email.com"
+        href="mailto:caiocesar2004gfgff@gmail.com"
         className="bg-primary px-6 py-3 rounded-lg font-semibold hover:scale-105 transition"
       >
         Enviar Email
