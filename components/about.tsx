@@ -1,13 +1,20 @@
+"use client";
+import Reveal from "./reveal";
+
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">Sobre Mim</h2>
-        <p className="text-gray-700 leading-relaxed">
-          Sou um desenvolvedor que gosta de transformar desafios em soluções reais.
-          Tenho experiência com backend, automação, APIs e aplicações escaláveis. 
-          Cada projeto é uma oportunidade de entregar qualidade e impacto.
-        </p>
+    <section id="about" className="py-28 px-6 bg-slate-950 text-center">
+      <div className="max-w-3xl mx-auto">
+        <Reveal>
+          <h2 className="text-3xl font-bold mb-8">Sobre Mim</h2>
+        </Reveal>
+
+        <Reveal>
+          <p className="text-slate-400 leading-relaxed">
+            Sou desenvolvedor focado em backend, APIs e aplicações web modernas.
+            Gosto de transformar problemas complexos em soluções simples, rápidas e escaláveis.
+          </p>
+        </Reveal>
       </div>
     </section>
   );
