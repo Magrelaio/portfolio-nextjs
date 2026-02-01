@@ -25,8 +25,7 @@ const techs = [
 export default function TechStack() {
   return (
     <section className="py-28 px-6 bg-slate-950 relative overflow-hidden">
-      
-      {/* Glow de fundo */}
+    
       <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[500px] h-[500px] bg-green-600/10 blur-[120px] rounded-full -z-10" />
 
       <div className="max-w-6xl mx-auto text-center">
