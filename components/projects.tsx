@@ -6,9 +6,9 @@ import Tilt from "react-parallax-tilt";
 const projects = [
   {
     title: "Kanbanly",
-    desc: "Gerenciador de tarefas estilo Trello com drag & drop, autenticação e arquitetura escalável.",
+    desc: "Gerenciador de tarefas estilo Trello",
     url: "https://kanbanly.caiocesardev.com.br",
-    github: "https://github.com/seuuser/kanbanly",
+    github: "https://github.com/Magrelaio/kanbanly",
     image: "/projects/kanbanly.png",
     techs: ["Laravel", "PostgreSQL", "Tailwind"],
   },
@@ -16,7 +16,7 @@ const projects = [
     title: "Star Wars Catalog",
     desc: "Aplicação full stack consumindo API externa, com backend próprio e armazenamento de logs.",
     url: "https://example.com/",
-    github: "https://github.com/seuuser/starwars",
+    github: "https://github.com/Magrelaio/starwars",
     image: "/projects/starwars.png",
     techs: ["PHP", "MySQL", "JavaScript"],
   },
@@ -24,7 +24,7 @@ const projects = [
     title: "Adventure Codex",
     desc: "Sistema online para campanhas de RPG com mapas interativos e fichas.",
     url: "https://example.com/",
-    github: "https://github.com/seuuser/adventure-codex",
+    github: "https://github.com/Magrelaio/adventure-codex",
     image: "/projects/adventure.png",
     techs: ["Laravel", "WebSockets", "MySQL"],
   },
@@ -57,7 +57,7 @@ export default function Projects() {
                 <div className="group h-full flex flex-col bg-slate-800/60 backdrop-blur border border-white/5 rounded-2xl overflow-hidden transition-all duration-300 hover:border-green-500/40 hover:shadow-xl hover:shadow-green-500/10">
 
                   <div className="relative h-44 overflow-hidden">
-                    {/* eslint-disable-next-line @next/next/no-img-element */} {/*<-- Mensagem para apagar o "erro" do img. Mensagem de erro é apenas o ESLint falando para utilizar <IMAGE /> pra ele poder renderizar e otimizar melhor*/}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={p.image}
                       alt={p.title}
@@ -105,7 +105,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 text-sm border border-white/10 hover:border-green-500/40 hover:text-green-400 text-slate-300 py-2 px-4 rounded-lg transition"
                       >
-                        <Github size={16} /> {/*??? NAO ENTENDO OQ É ESSE ERRO DO "Github"! DIZ 'Github' is deprecated. MAS NAO TEM NADA PRA SUBSTITUÍ-LO E ELE ESTA FUNCIONANDO PERFEITAMENTE!*/}
+                        <Github size={16} />
                         Código
                       </a>
                     </div>
