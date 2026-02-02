@@ -22,8 +22,8 @@ export default function About() {
             <div className="relative mb-8">
               <div className="absolute inset-0 bg-green-500/20 blur-2xl rounded-full" />
               <Image
-                src="/profile-image.jpg"
-                alt="foto de Caio Cesar"
+                src="/CaioCesar2.png"
+                alt="foto de Caio"
                 width={220}
                 height={220}
                 className="relative rounded-full border border-white/10 object-cover"
@@ -77,7 +77,7 @@ export default function About() {
 
               <button
                 onClick={() => scrollTo("contact")}
-                className="px-6 py-3 rounded-xl border border-white/15 text-white font-semibold hover:border-green-500/50 hover:text-green-400 transition-all duration-300"
+                className="px-6 py-3 rounded-xl border border-white/15 text-white font-semibold hover:border-green-500/50 hover:text-green-400 transition-all duration-300 cursor-pointer"
               >
               Falar comigo
               </button>
