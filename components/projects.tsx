@@ -9,7 +9,7 @@ const projects = [
     desc: "Gerenciador de tarefas estilo Trello",
     url: "https://kanbanly.caiocesardev.com.br",
     github: "https://github.com/Magrelaio/kanbanly",
-    image: "/projects/kanbanly.png",
+    image: "/kanbanly.png",
     techs: ["Laravel", "PostgreSQL", "Tailwind"],
   },
   {
@@ -20,13 +20,21 @@ const projects = [
     image: "/projects/starwars.png",
     techs: ["PHP", "MySQL", "JavaScript"],
   },
+  // {
+  //   title: "Adventure Codex",
+  //   desc: "Sistema online para campanhas de RPG com mapas interativos e fichas.",
+  //   url: "https://example.com/",
+  //   github: "https://github.com/Magrelaio/adventure-codex",
+  //   image: "/projects/adventure.png",
+  //   techs: ["Laravel", "WebSockets", "MySQL"],
+  // },
   {
-    title: "Adventure Codex",
-    desc: "Sistema online para campanhas de RPG com mapas interativos e fichas.",
+    title: "Modron",
+    desc: "Bot de dados para a plataforma Discord.",
     url: "https://example.com/",
-    github: "https://github.com/Magrelaio/adventure-codex",
-    image: "/projects/adventure.png",
-    techs: ["Laravel", "WebSockets", "MySQL"],
+    github: "https://github.com/Magrelaio/modron",
+    image: "/projects/modron.png",
+    techs: ["Python", "DiscordAPI", "MySQL"],
   },
 ];
 
