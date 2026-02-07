@@ -18,7 +18,7 @@ export default function About() {
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col items-center md:items-center text-center md:text-left">
           <Reveal>
             {/* Arrumar depois a altura da imagem!!!*/}
             <div className="relative mb-8">

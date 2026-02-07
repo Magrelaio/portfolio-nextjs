@@ -116,7 +116,7 @@ export default function Projects() {
                         className="flex items-center justify-center gap-2 text-sm border border-white/10 hover:border-green-500/40 hover:text-green-400 text-slate-300 py-2 px-4 rounded-lg transition"
                       >
                         <Github size={16} /> {/*??? NAO ENTENDO OQ É ESSE ERRO DO "Github"! DIZ 'Github' is deprecated. MAS NAO TEM NADA PRA SUBSTITUÍ-LO E ELE ESTA FUNCIONANDO PERFEITAMENTE!*/}
-                        Código
+                        Repositório
                       </a>
                     </div>
                   </div>
