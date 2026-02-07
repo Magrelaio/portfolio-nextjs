@@ -10,20 +10,20 @@ const projects = [
     url: "https://kanbanly.caiocesardev.com.br",
     github: "https://github.com/Magrelaio/kanbanly",
     image: "/kanbanly.png",
-    techs: ["Laravel", "PostgreSQL", "Tailwind"],
+    techs: ["PHP", "Laravel", "PostgreSQL", "Tailwind"],
   },
   {
     title: "Star Wars Catalog",
     desc: "Aplicação full stack consumindo API externa, com backend próprio e armazenamento de logs.",
-    url: "https://example.com/",
-    github: "https://github.com/Magrelaio/starwars",
-    image: "/projects/starwars.png",
-    techs: ["PHP", "MySQL", "JavaScript"],
+    url: "https://sw-catalogue.caiocesardev.com.br",
+    github: "https://github.com/Magrelaio/sw-catalogue",
+    image: "/sw-catalogue.png",
+    techs: ["Next.JS","React","Tailwind", "API RESTful" ],
   },
   // {
   //   title: "Adventure Codex",
   //   desc: "Sistema online para campanhas de RPG com mapas interativos e fichas.",
-  //   url: "https://example.com/",
+  //   url: "https://adventurecodex.caiocesardev.com.br/",
   //   github: "https://github.com/Magrelaio/adventure-codex",
   //   image: "/projects/adventure.png",
   //   techs: ["Laravel", "WebSockets", "MySQL"],
@@ -31,10 +31,10 @@ const projects = [
   {
     title: "Modron",
     desc: "Bot de dados para a plataforma Discord.",
-    url: "https://example.com/",
-    github: "https://github.com/Magrelaio/modron",
-    image: "/projects/modron.png",
-    techs: ["Python", "DiscordAPI", "MySQL"],
+    url: "https://modron.caiocesardev.com.br",
+    github: "https://github.com/Magrelaio/site-modron",
+    image: "/ModronSite.png",
+    techs: ["Python", "Next.JS","React", "DiscordAPI", "Tailwind", "JavaScript"],
   },
 ];
 
@@ -79,7 +79,9 @@ export default function Projects() {
                       <h3 className="text-xl font-semibold text-white group-hover:text-green-400 transition">
                         {p.title}
                       </h3>
-                      <ExternalLink className="text-slate-500 group-hover:text-green-400 transition" size={18} />
+                      <a href={p.url} target="_blank" rel="noopener noreferrer" className="opacity-0 group-hover:opacity-100 transition">
+                        <ExternalLink className="text-slate-500 group-hover:text-green-400 transition" size={18} />
+                      </a>  
                     </div>
 
                     <p className="text-slate-400 text-sm leading-relaxed mb-6">

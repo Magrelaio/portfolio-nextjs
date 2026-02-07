@@ -88,11 +88,11 @@ export default function Contact() {
           </button>
 
           <div className="flex justify-center gap-6">
-            <motion.a whileHover={{ y: -4, scale: 1.1 }} href="#" className="p-4 rounded-xl bg-slate-800 hover:bg-slate-700 transition">
+            <motion.a whileHover={{ y: -4, scale: 1.1 }} href="https://github.com/Magrelaio" className="p-4 rounded-xl bg-slate-800 hover:bg-slate-700 transition">
               <Github className="w-5 h-5 text-slate-300" />
             </motion.a>
 
-            <motion.a whileHover={{ y: -4, scale: 1.1 }} href="#" className="p-4 rounded-xl bg-slate-800 hover:bg-slate-700 transition">
+            <motion.a whileHover={{ y: -4, scale: 1.1 }} href="https://www.linkedin.com/in/caio-cesar-santos-930b3823b/" className="p-4 rounded-xl bg-slate-800 hover:bg-slate-700 transition">
               <Linkedin className="w-5 h-5 text-slate-300" />
             </motion.a>
           </div>

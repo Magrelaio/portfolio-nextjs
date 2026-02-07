@@ -26,13 +26,13 @@ export default function Hero() {
       </motion.h1>
 
       <motion.div
-  initial={{ opacity: 0, y: 40 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.2, duration: 0.8 }}
-  className="text-slate-400 text-lg max-w-2xl mb-10"
->
-  Desenvolvedor focado em <WordRotator />
-</motion.div>
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.8 }}
+        className="text-slate-400 text-lg max-w-2xl mb-10"
+      >
+        Desenvolvedor focado em <WordRotator />
+      </motion.div>
 
 
       <motion.button
