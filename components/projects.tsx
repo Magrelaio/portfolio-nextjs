@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Star Wars Catalog",
     desc: "Aplicação full stack consumindo API externa, com backend próprio e armazenamento de logs.",
-    url: "https://sw-catalogue.caiocesardev.com.br",
+    url: "https://swcatalogue.caiocesardev.com.br",
     github: "https://github.com/Magrelaio/sw-catalogue",
     image: "/sw-catalogue.png",
     techs: ["Next.JS","React","Tailwind", "API RESTful" ],
@@ -115,7 +115,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 text-sm border border-white/10 hover:border-green-500/40 hover:text-green-400 text-slate-300 py-2 px-4 rounded-lg transition"
                       >
-                        <Github size={16} /> {/*??? NAO ENTENDO OQ É ESSE ERRO DO "Github"! DIZ 'Github' is deprecated. MAS NAO TEM NADA PRA SUBSTITUÍ-L E ELE ESTA FUNCIONANDO PERFEITAMENTE!*/}
+                        <Github size={16} /> {/*??? NAO ENTENDO OQ É ESSE ERRO DO "Github"! DIZ 'Github' is deprecated. MAS NAO TEM NADA PRA SUBSTITUÍ-LO E ELE ESTA FUNCIONANDO PERFEITAMENTE!*/}
                         Código
                       </a>
                     </div>

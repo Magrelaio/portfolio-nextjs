@@ -2,6 +2,8 @@
 import Reveal from "./reveal";
 import { Code2, Server, Database } from "lucide-react";
 import Image from "next/image";
+import Counter from "./counter";
+
 
 export default function About() {
   const scrollTo = (id: string) => {
@@ -34,15 +36,21 @@ export default function About() {
           <Reveal>
             <div className="grid grid-cols-3 gap-6 text-center md:text-left">
               <div>
-                <p className="text-3xl font-bold text-green-400">+20</p>
+                <p className="text-3xl font-bold text-green-400">
+                  +<Counter end={20} />
+                </p>
                 <p className="text-slate-400 text-sm">Projetos</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-green-400">+15</p>
+                <p className="text-3xl font-bold text-green-400">
+                  +<Counter end={15} />
+                </p>
                 <p className="text-slate-400 text-sm">Tecnologias</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-green-400">100%</p>
+                  <p className="text-3xl font-bold text-green-400">
+                    <Counter end={100} suffix="%" />
+                  </p>
                 <p className="text-slate-400 text-sm">Foco em Qualidade</p>
               </div>
             </div>
@@ -68,11 +76,11 @@ export default function About() {
           <Reveal>
             <div className="flex flex-wrap gap-4 mt-8">
               <a
-                href=""
-                //download dps que linkar certinho descomenta isso :p
+                href="/Currículo Caio Cesar Santos.pdf"
+                download
                 className="px-6 py-3 rounded-xl bg-green-500 text-black font-semibold hover:bg-green-400 transition-all duration-300 shadow-lg shadow-green-500/20 hover:shadow-green-500/40"
               >
-              Baixar CV
+                Baixar CV
               </a>
 
               <button

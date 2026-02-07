@@ -30,7 +30,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
-        <h1 className="text-xl font-bold text-green-500 tracking-wide">
+        <h1 className="text-xl font-bold text-green-500 tracking-wide cursor-pointer" onClick={() => scrollTo("hero")}>
           CaioCesar.dev
         </h1>
 

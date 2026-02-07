@@ -24,27 +24,20 @@ export default function WordRotator() {
   }, [index]);
 
   return (
-    <span className="relative inline-block h-7 align-bottom">
-      <span className="invisible whitespace-nowrap font-medium">
-        experiências web elegantes
-      </span>
-
+    <span className="relative inline-block align-baseline">
       <AnimatePresence mode="wait">
         <motion.span
           key={words[index]}
-          initial={{ y: 30, opacity: 0, filter: "blur(8px)" }}
+          initial={{ y: 20, opacity: 0, filter: "blur(6px)" }}
           animate={{
             y: 0,
             opacity: 1,
             filter: "blur(0px)",
             textShadow: "0 0 8px rgba(34,197,94,0.35)",
           }}
-          exit={{ y: -30, opacity: 0, filter: "blur(8px)" }}
-          transition={{
-            duration: 0.65,
-            ease: [0.22, 1, 0.36, 1],
-          }}
-          className="absolute left-1 top-0 text-green-400 font-medium whitespace-nowrap"
+          exit={{ y: -20, opacity: 0, filter: "blur(6px)" }}
+          transition={{ duration: 0.5 }}
+          className="inline-block text-green-400 font-medium whitespace-nowrap"
         >
           {words[index]}
         </motion.span>

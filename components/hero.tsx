@@ -8,7 +8,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
     
       <motion.div
         className="absolute w-[700px] h-[700px] bg-green-500/30 rounded-full blur-[160px] -z-10"
@@ -29,7 +29,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.8 }}
-        className="text-slate-400 text-lg max-w-2xl mb-10"
+        className="text-slate-400 text-lg max-w-2xl mb-10 text-center px-4"
       >
         Desenvolvedor focado em <WordRotator />
       </motion.div>
