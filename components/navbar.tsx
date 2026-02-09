@@ -69,16 +69,16 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden bg-slate-950/95 backdrop-blur-lg border-t border-white/10"
+            className="md:bg-slate-950/80 backdrop-blur-lg border-t border-white/10"
           >
             <div className="flex flex-col items-center py-6 space-y-6 text-slate-300">
-              <button onClick={() => scrollTo("projects")} className="hover:text-green-400 transition">
+              <button onClick={() => scrollTo("projects")} className="hover:text-green-400 transition bg-slate-800/90 px-4 py-2 rounded-lg">
                 Projetos
               </button>
-              <button onClick={() => scrollTo("about")} className="hover:text-green-400 transition">
+              <button onClick={() => scrollTo("about")} className="hover:text-green-400 transition bg-slate-800/90 px-4 py-2 rounded-lg">
                 Sobre
               </button>
-              <button onClick={() => scrollTo("contact")} className="hover:text-green-400 transition">
+              <button onClick={() => scrollTo("contact")} className="hover:text-green-400 transition bg-slate-800/90 px-4 py-2 rounded-lg">
                 Contato
               </button>
             </div>

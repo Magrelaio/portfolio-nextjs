@@ -7,7 +7,7 @@ type Props = {
   suffix?: string;
 };
 
-export default function Counter({ end, duration = 1000, suffix = "" }: Props) {
+export default function Counter({ end, duration = 1500, suffix = "" }: Props) {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement | null>(null);
   const started = useRef(false);
