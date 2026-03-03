@@ -45,8 +45,8 @@ export default function Projects() {
 
       <div className="max-w-6xl mx-auto text-center">
         <Reveal>
-          <h2 className="text-4xl md:text-5xl font-bold mb-20">
-            Meus <span className="text-green-500">Projetos</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-20 text-white">
+            Meus <span className="text-green-500 drop-shadow-[0_0_10px_rgba(34,197,94,0.7)]">Projetos</span>
           </h2>
         </Reveal>
 

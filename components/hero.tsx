@@ -8,10 +8,10 @@ export default function Hero() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
+    <section id="hero" className="bg-slate-900 relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
     
       <motion.div
-        className="absolute w-[700px] h-[700px] bg-green-500/30 rounded-full blur-[160px] -z-10"
+        className="absolute w-[700px] h-[700px] bg-green-500/30 rounded-full blur-[160px] z-2"
         animate={{ scale: [1, 1.25, 1], opacity: [0.4, 0.9, 0.4] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       />
@@ -20,9 +20,9 @@ export default function Hero() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-5xl md:text-6xl font-bold mb-6"
+        className="text-5xl md:text-6xl font-bold mb-6 text-white z-10"
       >
-        Olá, eu sou <span className="text-green-500">Caio Cesar</span>
+        Olá, eu sou <span className="text-green-500 z-10">Caio Cesar</span>
       </motion.h1>
 
       <motion.div

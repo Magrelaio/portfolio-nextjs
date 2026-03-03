@@ -59,7 +59,7 @@ export default function About() {
 
         <div className="text-left">
           <Reveal>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
               Prazer, eu sou{" "}
               <span className="text-green-500">Caio Cesar</span> 👋
             </h2>

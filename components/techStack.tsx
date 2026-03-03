@@ -65,7 +65,7 @@ export default function TechStack() {
 
       <div className="max-w-6xl mx-auto">
         <Reveal>
-          <h2 className="text-center text-3xl md:text-4xl font-bold mb-20">
+          <h2 className="text-center text-3xl md:text-4xl font-bold mb-20 text-white">
             Tecnologias &{" "}
             <span className="text-green-500 drop-shadow-[0_0_10px_rgba(34,197,94,0.7)]">
               Ferramentas
