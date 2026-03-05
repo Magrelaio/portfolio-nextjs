@@ -33,7 +33,6 @@ const techGroups = [
       { name: "React", icon: SiReact, color: "text-blue-400" },
       { name: "Electron", icon: SiElectron, color: "text-blue-300" },
       { name: "Expo", icon: SiExpo, color: "text-purple-500" },
-      { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
     ],
   },
   {
