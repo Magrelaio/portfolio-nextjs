@@ -11,7 +11,7 @@ export default function Hero() {
     <section id="hero" className="bg-slate-900 relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
     
       <motion.div
-        className="absolute w-[700px] h-[700px] bg-green-500/30 rounded-full blur-[160px] z-2"
+        className="absolute w-[700px] h-[700px] bg-green-500/30 rounded-full blur-[160px]"
         animate={{ scale: [1, 1.25, 1], opacity: [0.4, 0.9, 0.4] }}
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       />
@@ -40,7 +40,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.8 }}
         onClick={scrollToProjects}
-        className="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-xl font-semibold shadow-lg shadow-green-600/30 transition hover:scale-105 cursor-pointer"
+        className="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-xl font-semibold shadow-lg shadow-green-600/30 transition hover:scale-105 cursor-pointer z-10"
       >
         Ver Projetos
       </motion.button>
