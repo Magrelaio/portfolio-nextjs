@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Reveal from "./reveal";
 import {
   SiElectron, SiReact, SiPython, SiPhp, SiLaravel, SiNextdotjs, SiJavascript, SiTypescript, SiTailwindcss, SiDocker, SiPostgresql,
-  SiMysql, SiMongodb, SiGit, SiGithub, SiLinux, SiGraphql,SiNodedotjs, SiBootstrap, SiSass, SiExpo, SiSqlite,
+  SiMysql, SiMongodb, SiGit, SiGithub, SiLinux, SiGraphql,SiNodedotjs, SiBootstrap, SiSass, SiExpo, SiSqlite, SiPostman,
 } from "react-icons/si";
 import { FaServer, FaCode, FaDatabase, FaTools } from "react-icons/fa";
 
@@ -53,6 +53,7 @@ const techGroups = [
       { name: "Linux", icon: SiLinux, color: "text-yellow-500" },
       { name: "Git", icon: SiGit, color: "text-orange-500" },
       { name: "GitHub", icon: SiGithub, color: "text-white" },
+      { name: "Postman", icon: SiPostman, color: "text-gray-400" },
     ],
   },
 ];
