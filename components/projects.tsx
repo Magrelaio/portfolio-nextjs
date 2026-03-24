@@ -11,6 +11,7 @@ const projects = [
     github: "https://github.com/Magrelaio/kanbanly",
     image: "/kanbanly.png",
     techs: ["PHP", "Laravel", "PostgreSQL", "Tailwind"],
+    offline: true,
   },
   {
     title: "Star Wars Catalog",
@@ -69,9 +70,15 @@ export default function Projects() {
                     <img
                       src={p.image}
                       alt={p.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                      className={`w-full h-full object-cover group-hover:scale-110 transition duration-500 ${'offline' in p && p.offline ? 'brightness-50' : ''}`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
+                    {'offline' in p && p.offline && (
+                      <div className="absolute top-3 left-3 flex items-center gap-1.5 bg-red-600/90 backdrop-blur text-white text-xs font-semibold px-2.5 py-1 rounded-full">
+                        <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                        Fora do ar
+                      </div>
+                    )}
                   </div>
 
                   <div className="p-8 flex flex-col flex-1">
@@ -79,9 +86,13 @@ export default function Projects() {
                       <h3 className="text-xl font-semibold text-white group-hover:text-green-400 transition">
                         {p.title}
                       </h3>
-                      <a href={p.url} target="_blank" rel="noopener noreferrer" className="opacity-0 group-hover:opacity-100 transition">
-                        <ExternalLink className="text-slate-500 group-hover:text-green-400 transition" size={18} />
-                      </a>  
+                      {'offline' in p && p.offline ? (
+                        <ExternalLink className="text-slate-600 opacity-0 group-hover:opacity-100 transition" size={18} />
+                      ) : (
+                        <a href={p.url} target="_blank" rel="noopener noreferrer" className="opacity-0 group-hover:opacity-100 transition">
+                          <ExternalLink className="text-slate-500 group-hover:text-green-400 transition" size={18} />
+                        </a>
+                      )}
                     </div>
 
                     <p className="text-slate-400 text-sm leading-relaxed mb-6">
@@ -100,14 +111,20 @@ export default function Projects() {
                     </div>
 
                     <div className="flex gap-3 mt-auto">
-                      <a
-                        href={p.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 text-sm bg-green-600 hover:bg-green-500 text-white py-2 rounded-lg transition font-medium"
-                      >
-                        Ver Projeto
-                      </a>
+                      {'offline' in p && p.offline ? (
+                        <span className="flex-1 text-sm bg-slate-700 text-slate-500 py-2 rounded-lg font-medium cursor-not-allowed text-center">
+                          Indisponível
+                        </span>
+                      ) : (
+                        <a
+                          href={p.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 text-sm bg-green-600 hover:bg-green-500 text-white py-2 rounded-lg transition font-medium"
+                        >
+                          Ver Projeto
+                        </a>
+                      )}
 
                       <a
                         href={p.github}
@@ -115,7 +132,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 text-sm border border-white/10 hover:border-green-500/40 hover:text-green-400 text-slate-300 py-2 px-4 rounded-lg transition"
                       >
-                        <Github size={16} /> {/*??? NAO ENTENDO OQ É ESSE ERRO DO "Github"! DIZ 'Github' is deprecated. MAS NAO TEM NADA PRA SUBSTITUÍ-LO E ELE ESTA FUNCIONANDO PERFEITAMENTE!*/}
+                        <Github size={16} />
                         Repositório
                       </a>
                     </div>

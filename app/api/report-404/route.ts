@@ -1,6 +1,15 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+function escapeHtml(str: string): string {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 export async function POST(req: Request) {
   try {
     const { path, timestamp, userAgent } = await req.json();
@@ -21,10 +30,10 @@ export async function POST(req: Request) {
       subject: "Alguém caiu em uma página 404",
       html: `
         <h2>Erro 404 no seu portfólio</h2>
-        <p><strong>Rota acessada:</strong> ${path}</p>
-        <p><strong>Data:</strong> ${new Date(timestamp).toLocaleString("pt-BR")}</p>
-        <p><strong>User Agent:</strong> ${userAgent}</p>
-        <p><strong>URL completa:</strong> ${process.env.NEXT_PUBLIC_SITE_URL || "https://caiocesardev.com.br"}${path}</p>
+        <p><strong>Rota acessada:</strong> ${escapeHtml(path)}</p>
+        <p><strong>Data:</strong> ${escapeHtml(new Date(timestamp).toLocaleString("pt-BR"))}</p>
+        <p><strong>User Agent:</strong> ${escapeHtml(userAgent)}</p>
+        <p><strong>URL completa:</strong> ${escapeHtml(process.env.NEXT_PUBLIC_SITE_URL || "https://caiocesardev.com.br")}${escapeHtml(path)}</p>
       `,
     });
 
