@@ -7,13 +7,13 @@ import Contact from "@/components/contact";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Navbar />
       <Hero />
       <TechStack />
       <Projects />
       <About />
       <Contact />
-    </>
+    </div>
   );
 }
